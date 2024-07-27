@@ -1,0 +1,79 @@
+body {
+  background-color: #bcbc3be3;
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #bcbcbc;
+  height: 400px;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 8%;
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+
+.main h1 {
+  text-shadow: 4px 4px 5px rgb(255, 255, 255);
+  font-size: 38px;
+}
+
+.main h3 {
+  color: rgb(255, 217, 0);
+  text-shadow: 4px 4px 5px rgb(0, 0, 0);
+  font-size: 24px;
+}
+
+#guessHere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 3px 3px 6px;
+  @media screen and (max-width: 600px) {
+    height: 160px;
+    width: 100%;
+  }
+}
+
+#form {
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+input[type="number"],
+input[type="submit"] {
+  padding: 20px 90px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  background-color: rgb(146, 238, 9);
+  border: 2px solid black;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(79, 255, 52);
+}
+
+#judgeTheguess {
+  margin: 5%;
+  font-size: 25px;
+  font-weight: bolder;
+  text-shadow: 4px 16px 18px black;
+}
